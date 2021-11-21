@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/myxconsulting/static/js/main.68038e0e.chunk.js",
+    "main.js.map": "/myxconsulting/static/js/main.68038e0e.chunk.js.map",
+    "runtime-main.js": "/myxconsulting/static/js/runtime-main.88c716cf.js",
+    "runtime-main.js.map": "/myxconsulting/static/js/runtime-main.88c716cf.js.map",
+    "static/js/2.a3c646ec.chunk.js": "/myxconsulting/static/js/2.a3c646ec.chunk.js",
+    "static/js/2.a3c646ec.chunk.js.map": "/myxconsulting/static/js/2.a3c646ec.chunk.js.map",
+    "index.html": "/myxconsulting/index.html",
+    "static/js/2.a3c646ec.chunk.js.LICENSE.txt": "/myxconsulting/static/js/2.a3c646ec.chunk.js.LICENSE.txt",
+    "static/media/infos.8646e2ef.svg": "/myxconsulting/static/media/infos.8646e2ef.svg",
+    "static/media/next_task.8e69a493.svg": "/myxconsulting/static/media/next_task.8e69a493.svg",
+    "static/media/video_marketing_digital.80ded797.mp4": "/myxconsulting/static/media/video_marketing_digital.80ded797.mp4",
+    "static/media/welcome.0ab370d2.svg": "/myxconsulting/static/media/welcome.0ab370d2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88c716cf.js",
+    "static/js/2.a3c646ec.chunk.js",
+    "static/js/main.68038e0e.chunk.js"
+  ]
+}
