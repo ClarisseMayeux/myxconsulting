@@ -5,6 +5,7 @@ import {color} from '../../assets/color.js'
 export const Nav = styled.nav`
     background: ${color.primaryColor};
     height: 80px;
+    //opacity: 70%;
     /* margin-top: -80px; */
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: ${color.whiteColor};
+        color: ${color.blackColor};
     }
 `
 
@@ -69,7 +70,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -82,7 +83,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkR)`
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
     justify-self: flex-start;
     cursor: pointer;
     display: flex;

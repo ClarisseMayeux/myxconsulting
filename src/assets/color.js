@@ -1,8 +1,8 @@
 export const color = {
-    primaryColor: "#18140E",
-    secondColor: "#DDBA7F",
-    successColor: "#01BF71",
-    whiteColor: "#fff",
+    primaryColor: "#fff",
+    secondColor: "#D8174E",
+    successColor: "#ff5733",
+    whiteColor: "#fff", //c'est noir mais tkt
     videoBgColor: "#232a34",
     blackColor: "#000"
 };

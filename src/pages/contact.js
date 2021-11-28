@@ -4,6 +4,7 @@ import {Container, Form, FormButton, FormContent, FormH1, FormInput, FormInputMe
 
 const Contact = () => {
   const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -12,8 +13,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendFeedback("template_d2bnbyj", {
+    sendFeedback("template_c0curvj", {
       name,
+      firstName,
       company,
       phone,
       email,
@@ -24,10 +26,11 @@ const Contact = () => {
   const sendFeedback = (templateId, variables) => {
 
     emailjs
-      .send("service_6g2hkel", templateId, variables, "user_1Lri5q3lboLN4ltnWZIJS")
+      .send("service_kpf2krl", templateId, variables, "user_2BYHxzUIxnNFuL2vhJnlO")
       .then((res) => {
         console.log(res);
         setName("");
+        setFirstName("");
         setCompany("");
         setPhone("");
         setEmail("");
@@ -51,6 +54,16 @@ const Contact = () => {
                             onChange={(e) => setName(e.target.value)}
                             placeholder="nom *"
                             value={name}
+                            required
+                        />
+
+                        <FormLabel htmlFor='for'>Prénom</FormLabel>
+                        <FormInput
+                            type="text"
+                            name="firstName"
+                            onChange={(e) => setFirstName(e.target.value)}
+                            placeholder="prénom *"
+                            value={firstName}
                             required
                         />
 

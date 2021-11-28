@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/home'
 import Contact from './pages/contact'
+import Services from './pages/mesServices'
+import './style/App.css'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +21,7 @@ const App = () => {
       <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/contact' element={<Contact/>} />
+          <Route exact path='/services' element={<Services/>} />
       </Routes>
       <Footer />
     </Router>

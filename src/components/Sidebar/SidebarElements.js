@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa';
 import { Link as LinkS } from 'react-scroll'
+import {color} from '../../assets/color.js'
 
 export const SidebarContainer = styled.aside`
-    background: #0d0d0d;
+    background: ${color.primaryColor};
     display: grid;
     position: fixed;
     justify-content: space-between;
@@ -19,7 +20,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: ${color.blackColor};
 `
 
 export const Icon = styled.div`
@@ -33,12 +34,12 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: ${color.blackColor};
 `
 
 export const SidebarMenu = styled.ul`
     display: grid;
-    grid-template-colums: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20px);
     text-align: center;
 
@@ -53,13 +54,13 @@ export const SidebarLinks = styled(LinkS)`
     justify-content: center;
     font-size: 1.5rem;
     text-decoration: none;
-    list-styles: none;
+    list-style: none;
     transition: 0.2s ease-in-out;
-    color: #fff;
+    color: ${color.blackColor};
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: ${color.secondColor};
         transition: 0.2s ease-in-out;
     }
 `
