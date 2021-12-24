@@ -9,16 +9,19 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLinks to="moi">Qui suis-je ?</SidebarLinks>
+                    <SidebarLinks to="aPropos">A propos</SidebarLinks>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLinks to="services">Mes services</SidebarLinks>
+                    <SidebarLinks to="services">Services</SidebarLinks>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLinks to="temoignages">Temoignages</SidebarLinks>
+                    <SidebarLinks to="creations">Créations</SidebarLinks>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLinks to="/contact">Contact</SidebarLinks>
+                    <SidebarLinks to="blog">Blog</SidebarLinks>
+                </SidebarMenu>
+                <SidebarMenu>
+                    <SidebarLinks to="contact">Contact</SidebarLinks>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

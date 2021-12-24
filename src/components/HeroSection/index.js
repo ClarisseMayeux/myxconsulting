@@ -15,10 +15,10 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>MyxConsulting toujours là pour vos projets</HeroH1>
-                <HeroP>
+                <HeroH1>Gagnez en visibilité</HeroH1>
+                {/* <HeroP>
                     Nous contacter c'est gagner plus de 70% d'efficacité sur votre projet.
-                </HeroP>
+                </HeroP> */}
                 <HeroBtnWrapper>
                     <Button 
                     to='/contact' 

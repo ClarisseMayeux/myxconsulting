@@ -4,13 +4,13 @@ import {color} from '../../assets/color.js'
 
 export const Nav = styled.nav`
     background: ${color.primaryColor};
+    opacity: ${({scrollNav}) => ( scrollNav ? '65%' : '100%')};
     height: 80px;
-    //opacity: 70%;
     /* margin-top: -80px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -45,7 +45,7 @@ export const NavLogo = styled(LinkR)`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 768px){
         display: block;
         position: absolute;
         top: 0;
@@ -70,24 +70,29 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
+    height: 80px;
+
+    &:hover {
+        border-bottom: 5px solid ${color.secondColor};
+    }
+
+    /* &:active {
+        border-bottom: 5px solid ${color.secondColor};
+    } */
+`
+
+export const NavLinks = styled(LinkR)`
     color: ${color.blackColor};
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
+    height: 100%;
     cursor: pointer;
-
-    &.active {
-        border-bottom: 3px solid ${color.secondColor};
-    }
 `
 
-export const NavLinks = styled(LinkR)`
-    color: ${color.blackColor};
-    justify-self: flex-start;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-    text-decoration: none;
+export const Img = styled.img`
+    width: 25%;
+    margin: 0 0 0 0;
+    padding-right: 0;
 `

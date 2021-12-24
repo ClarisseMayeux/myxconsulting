@@ -45,7 +45,7 @@ const Contact = () => {
             <FormWrap>
                 <FormContent>
                     <Form onSubmit={handleSubmit} method="POST">
-                        <FormH1>Contactez-nous</FormH1>
+                        <FormH1>Présentez votre projet</FormH1>
 
                         <FormLabel htmlFor='for'>Nom</FormLabel>
                         <FormInput

@@ -1,27 +1,45 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import Logo from "../../assets/images/myx.png"
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Img} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
+    
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav =()=>{
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
     return (
-        <Nav>
+        <Nav scrollNav = {scrollNav}>
             <NavbarContainer>
-                <NavLogo to='/'>MyxConsulting</NavLogo>
+                <NavLogo to='/'><Img src={Logo} alt='logo'/></NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="moi">Qui suis-je ?</NavLinks>
+                        <NavLinks to="aPropos" className='active'>A propos</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services">Mes services</NavLinks>
+                        <NavLinks to="services">Services</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="temoignages">Temoignages</NavLinks>
+                        <NavLinks to="creations">Créations</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/contact">Contact</NavLinks>
+                        <NavLinks to="blog">Blog</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="contact">Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

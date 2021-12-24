@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import {color} from '../assets/color.js'
 
 export const Button = styled(Link)`
-    bordeer-radius: 50px;
-    background: ${({primary}) => (primary ? color.successColor : color.secondColor)};
+    border-radius: 50px;
+    background: ${({primary}) => (primary ? color.contactColor : color.secondColor)};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
     color: ${({dark}) => (dark ? color.blackColor : color.blackColor)};

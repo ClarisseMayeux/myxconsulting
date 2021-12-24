@@ -1,31 +1,37 @@
 import styled from 'styled-components'
 import {color} from '../assets/color.js'
+import img from '../assets/images/ar_contact.png'
 
 export const Container = styled.div`
     min-height: 692px;
-    margin-top: 40px;
-    margin-bottom: 40px;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     z-index: 0;
     overflow: hidden;
+    background: no-repeat url(${img});
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background: linear-gradient(
-        108deg;
-        rgba(1, 147, 86, 1) 0%;
+        108 deg,
+        rgba(1, 147, 86, 1) 0%,
         rgba(10, 201, 122, 1) 100%
     );
 `
 
 export const FormWrap = styled.div`
     height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
     @media screen and (max-width: 400px){
-        height: 80%;
+        height: 70%;
     }
 `
 
@@ -41,14 +47,14 @@ export const FormContent = styled.div`
 `
 
 export const Form = styled.form`
-    background: ${color.primaryColor};
+    background: ${color.contactColor};
     max-width: 400px;
     height: auto;
     width: 100%;
     z-index: 1;
     display: grid;
     margin: 0 auto;
-    padding: 80px 32px;
+    padding: 20px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
     
@@ -59,7 +65,7 @@ export const Form = styled.form`
 
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
     font-size: 20px;
     font-weight: 400;
     text-align: center;
@@ -68,7 +74,7 @@ export const FormH1 = styled.h1`
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     font-size: 14px;
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
 `
 
 export const FormInput = styled.input`
@@ -100,6 +106,6 @@ export const FormButton = styled.button`
 export const Text = styled.span`
     text-align: center;
     margin-top: 24px;
-    color: ${color.whiteColor};
+    color: ${color.blackColor};
     font-size: 14px;
 `
